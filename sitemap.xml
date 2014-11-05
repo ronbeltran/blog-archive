@@ -4,12 +4,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for page in site.pages %}
     <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>{{ site.url }}{{site.baseurl}}{{ page.url }}</loc>
     </url>
   {% endfor %}
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+        <loc>{{ site.url }}{{site.baseurl}}{{ post.url }}</loc>
     </url>
   {% endfor %}
 </urlset>

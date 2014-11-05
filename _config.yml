@@ -9,3 +9,4 @@ markdown: redcarpet
 highlighter: pygments
 excerpt_separator: ''
 include: ['README.md', 'LICENSE.md', 'CNAME']
+baseurl: /blog-archive

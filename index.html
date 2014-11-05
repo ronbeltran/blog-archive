@@ -7,7 +7,7 @@ title: "Thoughts on programming and life"
   {% for post in site.posts limit:6 %}
     <article id="post" class="post type-post status-publish format-standard hentry">
     <header class="entry-header">
-    <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h1 class="entry-title"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
     <div class="entry-meta">
         <span class="sep">Posted on </span>
         <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">
