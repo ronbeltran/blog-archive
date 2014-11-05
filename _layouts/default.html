@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-ph">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="author" content="{{ site.author }}">
+<title>{% if page.title %} {{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/syntax.css" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} &raquo; Feed" href="/feed.xml" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta name="author" content="{{ site.author }}">
+<meta name="description" content="{{ site.description }}" />
+<meta name="google-site-verification" content="FIRm5LUMC1HuC76WEOz83bbdS830j8L_PF6BsZ9l770" />
+<meta name="robots" content="index, nofollow">
+{% if site.analytics_id %}
+  {% include analytics.html %}
+{% endif %}
+<!--
+Generator: Jekyll
+Theme: Wordpress Twenty Eleven Theme
+-->
+</head>
+
+<body class="blog single-author one-column content">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="/" title="{{ site.name }}" rel="home">{{ site.name }}</a></span></h1>
+				<h2 id="site-description">{{ site.description }}</h2>
+			</hgroup>
+
+<div class="header">
+  <img src="/images/headers/chessboard.jpg" width="1000" height="288" alt="@ronbeltran" />
+</div>
+
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+								<div class="menu">
+			    <ul>
+			        <li class="page_item"><a href="/" title="Home">Home</a></li>
+			        <li class="page_item"><a href="/p/about.html" title="About">About</a></li>
+			        <li class="page_item"><a href="/p/archive.html" title="Archive">Archive</a></li>
+				</ul>
+								</div>
+			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+  {{ content }}
+			
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+        <div id="site-generator">
+            Copyright &copy <a href="/">Ronnie Beltran</a> Built with Jekyll
+        </div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+</body>
+</html>
+

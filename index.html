@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Thoughts on programming and life"
+---
+
+<div id="entry-content">
+  {% for post in site.posts limit:6 %}
+    <article id="post" class="post type-post status-publish format-standard hentry">
+    <header class="entry-header">
+    <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="entry-meta">
+        <span class="sep">Posted on </span>
+        <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">
+            <time class="entry-date" datetime="{{ post.date|date_to_string }}">{{ post.date|date_to_string }}</time>
+        </a>
+            <span class="sep"> by </span> <span class="author vcard">
+            <a class="url fn n" href="/p/about.html" title="{{ site.author }}" rel="author">Ronnie Beltran</a>
+            </span>
+    </div><!-- .entry-meta -->
+    </header><!-- .entry-header -->
+    <div class="entry-content">
+        {{ post.content }}
+    </div><!-- .entry-content -->
+    <footer class="entry-meta">
+    </footer><!-- .entry-meta -->
+    </article><!-- #post -->
+  {% endfor %}
+</div>

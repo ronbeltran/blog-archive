@@ -1,0 +1,11 @@
+name: "Ronnie Beltran"
+description: Thoughts on programming and life
+author: Ronnie Beltran
+url: http://www.ronbeltran.com
+permalink: /:year/:month/:title.html
+disqus_shortname: ronbeltran
+analytics_id: UA-47323896-1
+markdown: redcarpet
+highlighter: pygments
+excerpt_separator: ''
+include: ['README.md', 'LICENSE.md', 'CNAME']
